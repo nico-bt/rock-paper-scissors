@@ -1,3 +1,13 @@
+body {
+  margin: 10px;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+h1 {
+  text-align: center;
+  border-bottom: 1px solid blue;
+  margin: 50px 150px;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -8,4 +18,29 @@ button {
   padding: 10px 40px;
   width: 150px;
   text-align: center;
+}
+
+#moves {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+#result {
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: gold;
+  width: 350px;
+  grid-column: span 2;
 }
