@@ -18,6 +18,18 @@ button {
   padding: 10px 40px;
   width: 150px;
   text-align: center;
+  border-radius: 10px;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition-duration: 0.25s;
+}
+button:active {
+  background-color: darkgrey;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
 }
 
 #moves {
@@ -25,6 +37,7 @@ button {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
+  font-size: 22px;
 }
 
 .results {
