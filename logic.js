@@ -58,7 +58,7 @@ function game(playerSelection) {
     score = score + result;
     history.push(result);
 
-    pHumanMove.innerText=`Your move: ${playerSelection}`;
+    pHumanMove.innerText=`You: ${playerSelection}`;
     pComputerMove.innerText=`Computer: ${computerSelection}`
     
     if (result=== 0) {pResult.innerText="Draw"}
