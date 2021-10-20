@@ -1,49 +1,49 @@
 
 function computerPlay() {
-    const options = ["Rock", "Paper", "Scissors"];
+    const options = ["rock", "paper", "scissors"];
     let random = Math.floor(Math.random()*3);
     return options[random];
 }
 
 function play(playerSelection, computerSelection) {
     if (playerSelection ==="rock") {
-        if (computerSelection==="Paper") {
+        if (computerSelection==="paper") {
             //return("You lose! Paper beats Rock")
             return -1;
         }
-        if (computerSelection === "Scissors") {
+        if (computerSelection === "scissors") {
             //return ("You win! Rock beats Scissors")
             return 1;
         }
-        if (computerSelection === "Rock") {
+        if (computerSelection === "rock") {
             //return ("Draw")
             return 0;
         }
     }
     if (playerSelection === "paper") {
-        if (computerSelection === "Paper") {
+        if (computerSelection === "paper") {
             //return ("Draw")
             return 0;
         }
-        if (computerSelection === "Scissors") {
+        if (computerSelection === "scissors") {
             //return ("You lose! Scissors beats Paper")
             return -1;
         }
-        if (computerSelection === "Rock") {
+        if (computerSelection === "rock") {
             //return ("You win! Paper beats Rock")
             return 1;
         }
     }
     if (playerSelection === "scissors") {
-        if (computerSelection === "Paper") {
+        if (computerSelection === "paper") {
             //return ("You win! Scissors beats Paper")
             return 1;
         }
-        if (computerSelection === "Scissors") {
+        if (computerSelection === "scissors") {
             //return ("Draw")
             return 0;
         }
-        if (computerSelection === "Rock") {
+        if (computerSelection === "rock") {
             //return ("You lose! Rock beats Scissors")
             return -1;
         }
@@ -80,6 +80,7 @@ const pHistory = document.querySelector("#history");
 
 buttons.forEach((btn)=>{
     btn.addEventListener("click",(e)=>{
-        game(e.target.id);
+        let humanMove = e.target.id;
+        game(humanMove);
     })
 })
