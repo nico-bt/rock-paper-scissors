@@ -61,9 +61,9 @@ function game(playerSelection) {
     pHumanMove.innerText=`You: ${playerSelection}`;
     pComputerMove.innerText=`Computer: ${computerSelection}`
     
-    if (result=== 0) {pResult.innerText="Draw"}
-    if (result === 1) { pResult.innerText="Win"}
-    if (result === -1) { pResult.innerText="Lose"}
+    if (result=== 0) {pResult.innerText="Draw"; pResult.style.backgroundColor="gold"}
+    if (result === 1) { pResult.innerText="Win"; pResult.style.backgroundColor="green"}
+    if (result === -1) { pResult.innerText="Lose"; pResult.style.backgroundColor="red"}
 
     pHistory.innerText = `Puntaje acumulado: ${score}`;
 }
